@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*Tamanho de tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /*Coloca o degrade quando vira tablet*/
+    body {
+        background: linear-gradient(#49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 80vw;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        /*Não é 30% da vw, é 30% do elemento pai,
+        então a imagem tem a largura de 30% da section no lado esquerdo*/
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+}
+
+/*Desktop e grandes telas*/
+@media screen and (min-width: 992px) {
+    body {
+        background: linear-gradient(#49a09d, #5f2c82);
+    }
+
+    section#login {
+        /*Nesse caso é legal colocar um valor definido para PARAR DE CRESCER*/
+        width: 950px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+
+/*    Com os 2 em width 100% fica meio a meio*/
+}
