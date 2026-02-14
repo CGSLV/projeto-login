@@ -9,6 +9,7 @@
 
     section#login {
         width: 80vw;
+        height: 300px;
     }
 
     section#login > div#imagem {
@@ -39,6 +40,7 @@
     section#login {
         /*Nesse caso é legal colocar um valor definido para PARAR DE CRESCER*/
         width: 950px;
+        height: 310px;
     }
 
     section#login > div#imagem {
@@ -60,6 +62,7 @@
 
     div#formulario > p{
         font-size: 1.2em;
+        margin: 2px 0;
     }
 
     div.campo > input {

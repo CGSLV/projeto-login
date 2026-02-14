@@ -90,6 +90,11 @@ div.campo > input{
     transform: translateY(-4px);
 }
 
+/*Deixa o background branco quando você seleciona para digitar algo*/
+div.campo > input:focus-within{
+    background-color: white;
+}
+
 
 
 
