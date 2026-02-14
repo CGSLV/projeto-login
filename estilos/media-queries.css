@@ -23,6 +23,11 @@
         float: right;
         width: 70%;
     }
+
+    /*Coloque essa width quando aumenta*/
+    div.campo > input{
+        width: calc(90% - 10px);
+    }
 }
 
 /*Desktop e grandes telas*/
@@ -55,6 +60,10 @@
 
     div#formulario > p{
         font-size: 1.2em;
+    }
+
+    div.campo > input {
+        width: calc(90% - 10px);
     }
 
 /*    Com os 2 em width 100% fica meio a meio*/

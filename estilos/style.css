@@ -45,7 +45,7 @@ section#login {
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 
@@ -63,11 +63,42 @@ div#imagem {
 
 }
 
+/*Colorindo os inputs*/
+form >div.campo{
+    background-color: #5f2c82;
+    border-radius: 5px;
+    color: white;
+    margin: 5px 0;
+
+    /*height: 40px;*/
+}
+
+/*Configurações dos icones*/
+div.campo > span{
+    color: white;
+    /*Ter nocao das bordas*/
+    /*background-color: black;*/
+    font-size: 1.3em;
+    width: 40px;
+    padding: 10px;
+}
+div.campo > input{
+    background-color: #49a09d;
+    height: 2.6em;
+    width: calc(82% - 10px);
+    border-radius: 8px;
+    transform: translateY(-4px);
+}
+
+
+
 
 section#login > div#formulario {
     display: block;
     text-align: center;
     padding: 10px;
+    height: 100%;
+
 }
 
 section#login > div#formulario > h1 {
@@ -78,3 +109,45 @@ section#login > div#formulario > p {
     font-size: 0.9em;
 }
 
+/*É possível especificar os seus elementos por seus atriburos e valores*/
+form > input[type=submit] {
+    display: block; /*Para pula uma linha pro proximo elemento*/
+    font-size: 1em;
+    /*ocupar todo o container*/
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #49a09d;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #2c615e;
+    cursor: pointer; /*deixar o ponteiro como maozinha quando passa por cima*/
+}
+
+
+form > #iesqueci {
+    /*Tem que colocar o display block para ir o width: 100%*/
+    display: block;
+    color: #2c615e;
+    text-decoration: none;
+    border: 1px solid #2c615e;
+    border-radius: 5px;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    height: 40px; /*Mesmo do de cima*/
+}
+
+form > #iesqueci:hover {
+    background-color: #82dcd7;
+}
+
+form > #iesqueci > span {
+    font-size: 0.8em;
+    line-height: 2.55;
+}
