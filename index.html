@@ -8,6 +8,9 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
 </head>
 <body>
     <main>
@@ -19,11 +22,26 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-<!--                Method: POST pois usaremos senha-->
-                <form action="#" method="post">
+<!--                <Method: POST pois usaremos senha-->
+                <form action="#" method="post" autocomplete="on">
 <!--                    Inputs de email e senha-->
-<!--                    <input type="email" id="email" name="email" placeholder="E-mail">-->
-<!--                    <input type="password" id="senha" name="senha" placeholder="Senha">-->
+
+<!--                    Separe em divs ao invés de usar <br>-->
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" id="iemail" name="email" placeholder="E-mail" autocomplete="email" required maxlength="30">
+                    </div>
+
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" id="isenha" name="senha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha<span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
